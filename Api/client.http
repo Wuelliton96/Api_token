@@ -1,0 +1,123 @@
+GET http://localhost:6100/categoria HTTP/1.1
+Content-Type: application/json
+
+###
+
+POST http://localhost:6100/categoria HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_categoria": 5,
+    "nome_categoria": "Leites"
+}
+
+###
+
+PUT http://localhost:6100/categoria/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_categoria": "Perfumaria"
+}
+
+###
+
+DELETE http://localhost:6100/categoria/1 HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:6100/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    
+}
+
+###
+//Consultar o produto por categoria.
+GET http://localhost:6100/produto/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    
+}
+
+###
+GET http://localhost:6100/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    
+}
+
+###
+
+POST http://localhost:6100/produto HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod_produto": 6,
+    "nome_produto": "Gelo",
+    "qtd_produto": 8,
+    "id_categoria": 1
+}
+
+###
+
+
+PUT http://localhost:6100/produto/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nome_produto": "Dipirona",
+    "qtd_produto": 2,
+    "id_categoria": 1
+}
+
+###
+
+DELETE http://localhost:6100/produto/1 HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:6100/pedido HTTP/1.1
+Content-Type: application/json
+
+{
+
+}
+
+###
+//Buscando o produtos pela quantidade de pedido
+GET http://localhost:6100/pedido/4 HTTP/1.1
+Content-Type: application/json
+
+{
+
+}
+###
+
+POST http://localhost:6100/pedido HTTP/1.1
+Content-Type: application/json
+
+{
+    "num_pedido": 3,
+    "cod_produto": 3
+}
+
+###
+
+
+PUT http://localhost:6100/pedido/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "cod_produto": 7
+}
+
+###
+
+DELETE http://localhost:6100/pedido/3 HTTP/1.1
+Content-Type: application/json
